@@ -178,4 +178,18 @@ double
 
 #### 注意事项
 
-当显示模式是`SplitViewDisplayMode`并且IsPaneOpen为`false`时，这个属性指定了Pane窗格的宽度。
+当显示模式是`SplitViewDisplayMode`并且IsPaneOpen为`false`时，这个属性指定了Pane窗格的宽度。  
+
+### CompactPaneLengthProperty
+
+标识CompactPaneLength依赖属性  
+
+```C#
+public static DependencyProperty CompactPaneLengthProperty { get; }
+```
+
+#### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识CompactPaneLength依赖属性  
+
