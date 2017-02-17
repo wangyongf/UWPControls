@@ -40,4 +40,6 @@ public class SplitView
 下面是[SplitView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview)的一个示例。  
 ![示例](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls/images/controls/splitviewbasic.png)  
   
-[内容区域](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_Content)始终是可见的
+[内容区域](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_Content)始终是可见的，它可以只包含一个子元素，该子元素一般都是包含附加子元素的内容面板。尽管内容区域是始终可见的，不过它也可以被Pane窗格区域完全覆盖。  
+
+你可以设置SplitView的一些属性来定制[Pane窗格](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_Pane)的外观和行为。设置[IsPaneOpen](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_IsPaneOpen)属性来打开或是关闭[Pane窗格](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_Pane)。[SplitView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview)不提供用来切换[Pane窗格](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_Pane)状态的菜单或者汉堡按钮，切换[IsPaneOpen属性](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_IsPaneOpen)必须由你自己手动编码实现。
