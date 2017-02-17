@@ -31,5 +31,5 @@ public class SplitView
 
 ### 继承的成员
 
-
+[点击这里查看](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#syntax)
 
