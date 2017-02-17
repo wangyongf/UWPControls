@@ -493,3 +493,54 @@ public static DependencyProperty TemplateSettingsProperty { get; }
 ## Events
 
 ### PaneClosed
+
+当SplitView的Pane窗格关闭时触发。
+
+```C#
+public event TypedEventHandler PaneClosed
+```
+
+```XAML
+<SplitView PaneClosed="eventhandler"/>
+```
+
+### PaneClosing
+
+当SplitView的Pane窗格正在关闭时触发。
+
+```C#
+public event TypedEventHandler PaneClosing
+```
+
+```XAML
+<SplitView PaneClosing="eventhandler"/>
+```
+
+#### 注意事项
+
+设置[Cancel](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitviewpaneclosingeventargs#Windows_UI_Xaml_Controls_SplitViewPaneClosingEventArgs_Cancel)属性为true可以取消SplitView的Pane窗格的关闭动作。
+
+## Device family设备族
+
+Windows 10 (v10.0.10240.0引入)
+
+## API contract
+
+Windows Foundation.UniversalApiContract (v1引入)
+
+## Attributes
+
+Windows.Foundation.Metadata.StaticAttribute
+Windows.Foundation.Metadata.ContractVersionAttribute
+Windows.Foundation.Metadata.MarshalingBehaviorAttribute
+Windows.Foundation.Metadata.WebHostHiddenAttribute
+Windows.Foundation.Metadata.StaticAttribute
+Windows.Foundation.Metadata.ThreadingAttribute
+Windows.Foundation.Metadata.ComposableAttribute
+Windows.UI.Xaml.Markup.ContentPropertyAttribute
+
+## Details
+
+### Assembly
+
+Windows.UI.Xaml.Controls.dll
