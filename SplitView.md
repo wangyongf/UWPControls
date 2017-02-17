@@ -48,4 +48,4 @@ public class SplitView
 
 尽管SplitView控件的外观主要由Pane窗格和内容区域的子元素所决定，不过你还是可以设置PaneBackground属性来改变默认的背景色。  
 
-通过设置DisplayMode属性，你可以配置Pane窗格和内容区域之间的交互方式。在默认状态下，Pane窗格爱打开时会覆盖内容区域，在关闭时Pane窗格会消失。你可以
+通过设置DisplayMode属性，你可以配置Pane窗格和内容区域之间的交互方式。在默认状态下，Pane窗格在打开时会覆盖内容区域，在关闭时Pane窗格会消失。你可以
