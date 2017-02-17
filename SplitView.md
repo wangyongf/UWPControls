@@ -157,3 +157,25 @@ public class SplitView
 public SplitView()
 ```
 
+## 属性
+
+### CompactPaneLength
+
+获取或设置SplitView的Pane窗格在紧凑显示模式下的宽度。  
+
+```C#
+public double CompactPaneLength { get; set; }
+```
+
+```XAML
+<SplitView CompactPaneLength="double" .../>
+```
+
+#### 属性值
+
+double  
+在紧凑显示模式下Pane窗格的宽度。默认是48 device-independent-pixel(DIP)（由SplitViewCompactPaneThemeLength资源定义）  
+
+#### 注意事项
+
+当显示模式是`SplitViewDisplayMode`并且IsPaneOpen为`false`时，这个属性指定了Pane窗格的宽度。
