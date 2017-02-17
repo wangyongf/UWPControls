@@ -23,4 +23,9 @@ public class SplitView
 
 ### 继承层次结构
 
+[DependencyObject](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyobject)  
+　　[UIElement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement)
+　　　　[FrameworkElement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.frameworkelement)
+　　　　　　[Control](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.control)
+
 
