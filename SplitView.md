@@ -368,3 +368,102 @@ public static DependencyProperty OpenPaneLengthProperty { get; }
 
 [DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
 标识`OpenPaneLength`依赖属性。
+
+### Pane
+
+获取或设置SplitView的Pane窗格的内容。
+
+```C#
+public UIElement Pane { get; set; }
+```
+
+```C#
+<SplitView>
+  singleObject
+  <SplitView.Pane>
+    singleObject
+  </SplitView.Pane
+</SplitView>
+```
+
+#### 属性值
+
+[UIElement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement)  
+SplitView的Pane窗格的内容。默认为空null。
+
+### PaneBackground
+
+获取或设置要应用于控件窗格区域的背景的画笔。
+
+```C#
+public Brush PaneBackground { get; set; }
+```
+
+```XAML
+<SplitView PaneBackground="{StaticResource resourceName}"/>
+```
+
+#### 属性值
+
+[Brush](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.brush)  
+应用于控件窗格区域的背景的画笔。
+
+### PaneBackgroundProperty
+
+标识`PaneBackground`依赖属性。
+
+```C#
+public static DependencyProperty PaneBackgroundProperty { get; }
+```
+
+#### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识`PaneBackgound`依赖属性。
+
+### PanePlacement
+
+获取或设置一个值，指定Pane窗格是显示在SplitView的右边还是左边。
+
+```C#
+public SplitViewPanePlacement PanePlacement { get; set; }
+```
+
+```XAML
+<SplitView PanePlacement="splitViewPanePlacementMemberName" />
+```
+
+#### 属性值
+
+[SplitViewPanePlacement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitviewpaneplacement)  
+一系列枚举值，指定Pane窗格是显示在SplitView的右边还是左边。默认在左边。
+
+### PanePlacementProperty
+
+标识`PanePlacement`依赖属性。
+
+```C#
+public static DependencyProperty PanePlacementProperty { get; }
+```
+
+#### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识`PanePlacement`依赖属性。
+
+### PaneProperty
+
+标识`Pane`依赖属性。
+
+```C#
+public static DependencyProperty PaneProperty { get; }
+```
+
+#### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识`Pane`依赖属性。
+
+### TemplateSettings
+
+获取一个对象，在为SplitView控件定义模板时，提供能够被引用为TemplateBinding资源的计算值。
