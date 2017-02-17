@@ -193,3 +193,37 @@ public static DependencyProperty CompactPaneLengthProperty { get; }
 [DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
 标识CompactPaneLength依赖属性  
 
+### Content
+
+获取或设置SplitView主面板的内容
+
+```C#
+public UIElement Content { get; set; }
+```
+
+```XAML
+<SplitView>
+  singleObject
+</SplitView>
+```
+
+#### 属性值
+
+[UIElement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement)  
+SplitView主面板的内容。默认为空null。
+
+### ContentProperty
+
+标识`Content`依赖属性  
+
+```C#
+public static DependencyProperty ContentProperty { get; }
+```
+
+#### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识`Content`依赖属性
+
+### DisplayMode
+
