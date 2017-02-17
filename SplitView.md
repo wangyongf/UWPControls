@@ -227,3 +227,50 @@ public static DependencyProperty ContentProperty { get; }
 
 ### DisplayMode
 
+获取或设置一个值，指定Pane窗格和SplitView的内容区域的显示方式  
+
+```C#
+public SplitViewDisplayMode DisplayMode { get; set; }
+```
+
+```XAML
+<SplitView DisplayMode="splitViewDisplayModeMemberName" />
+```
+
+#### 属性值
+
+[SplitViewDisplayMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitviewdisplaymode)  
+一系列枚举值，指定Pane窗格和SplitView的内容区域的显示方式。默认值是`Overlay`。
+
+### DisplayModeProperty
+
+标识`DisplayMode`依赖属性
+
+```C#
+public static DependencyProperty DisplayModeProperty { get; }
+```
+
+#### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识`DisplayMode`依赖属性
+
+### IsPaneOpen
+
+获取或设置一个值，指定SplitView的Pane窗格是否扩展到最大宽度
+
+```C#
+public bool IsPaneOpen { get; set; }
+```
+
+```XAML
+<SplitView IsPaneOpen="bool" .../>
+```
+
+#### 属性值
+
+`bool`  
+`true`-如果Pane窗格扩展到了最大宽度；否则，`false`。默认值是`true`。
+
+#### 注意事项
+
