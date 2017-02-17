@@ -467,3 +467,29 @@ public static DependencyProperty PaneProperty { get; }
 ### TemplateSettings
 
 获取一个对象，在为SplitView控件定义模板时，提供能够被引用为TemplateBinding资源的计算值。
+
+```C#
+public SplitViewTemplateSettings TemplateSettings { get; }
+```
+
+#### 属性值
+
+[SplitViewTemplateSettings](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.splitviewtemplatesettings)  
+一个为模板提供计算值的对象。
+
+### TemplateSettingsProperty
+
+标识`TemplateSettings`依赖属性。
+
+```C#
+public static DependencyProperty TemplateSettingsProperty { get; }
+```
+
+#### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识`TemplateSettings`依赖属性。
+
+## Events
+
+### PaneClosed
