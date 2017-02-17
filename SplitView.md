@@ -80,3 +80,80 @@ public class SplitView
 
 ## 构造函数一览
 
+[SplitView()](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView__ctor)  
+初始化SplitView类的一个实例  
+
+## 属性一览
+
+[CompactPaneLength](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_CompactPaneLength)  
+获取或设置SplitView的Pane窗格在紧凑显示模式下的宽度  
+
+[CompactPaneLengthProperty](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_CompactPaneLengthProperty)  
+标识CompactPaneLength依赖属性  
+
+[Content](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_Content)  
+获取或设置SplitView主面板的内容  
+
+[ContentProperty](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_ContentProperty)  
+标识Content依赖属性  
+
+[DisplayMode](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_DisplayMode)  
+获取或设置一个值，指定Pane窗格和SplitView的内容区域的显示方式  
+
+[DisplayModeProperty](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_DisplayModeProperty)  
+标识DisplayMode依赖属性  
+
+[IsPaneOpen](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_IsPaneOpen)  
+获取或设置一个值，指定SplitView的Pane窗格是否扩展到最大宽度  
+
+[IsPaneOpenProperty](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_IsPaneOpenProperty)  
+标识IsPaneOpen依赖属性  
+
+[LightDismissOverlayMode](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_LightDismissOverlayMode)  
+获取或设置一个值，指定light-dismiss UI之外的区域是否变暗  
+
+[LightDismissOverlayModeProperty](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_LightDismissOverlayModeProperty)  
+标识LightDismissOverlayMode依赖属性  
+
+[OpenPaneLength](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_OpenPaneLength)  
+获取或设置SplitView的Pane窗格完全展开时的宽度  
+
+[OpenPaneLengthProperty](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_OpenPaneLengthProperty)  
+标识OpenPaneLength依赖属性  
+
+[Pane](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_Pane)  
+获取或设置SplitView的Pane窗格的内容  
+
+[PaneBackground](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_PaneBackground)  
+获取或设置要应用于控件窗格区域的背景的画笔  
+
+[PaneBackgroundProperty](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_PaneBackgroundProperty)  
+标识PaneBackground依赖属性  
+
+[PanePlacement](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_PanePlacement)  
+获取或设置一个值，指定Pane窗格是显示在SplitView的右边还是左边  
+
+[PanePlacementProperty](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_PanePlacementProperty)  
+标识PanePlacement依赖属性  
+
+[TemplateSettings](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_TemplateSettings)  
+获取一个对象，在为SplitView控件定义模板时，提供能够被引用为TemplateBinding资源的计算值  
+
+## 事件一览
+
+[PaneClosed](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_PaneClosed)  
+当SplitView的Pane窗格关闭时触发  
+
+[PaneClosing](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.SplitView#Windows_UI_Xaml_Controls_SplitView_PaneClosing)  
+当SplitView的Pane窗格正在关闭时触发  
+
+## 构造函数
+
+### SplitView()  
+
+初始化SplitView类的一个新实例  
+
+```C#
+public SplitView()
+```
+
