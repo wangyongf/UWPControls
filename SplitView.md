@@ -335,3 +335,36 @@ public static DependencyProperty LightDismissOverlayModeProperty { get; }
 ```
 
 #### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识`LightDismissOverlayMode`依赖属性。
+
+### OpenPaneLength
+
+获取或设置SplitView的Pane窗格完全展开时的宽度。
+
+```C#
+public double OpenPaneLength { get; set; }
+```
+
+```XAML
+<SplitView OpenPaneLength="double" .../>
+```
+
+#### 属性值
+
+`double`
+SplitView的Pane窗格完全展开时的宽度。默认值是320 device-independent pixel(DIP)。
+
+### OpenPaneLengthProperty
+
+标识`OpenPaneLength`属性。
+
+```C#
+public static DependencyProperty OpenPaneLengthProperty { get; }
+```
+
+#### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识`OpenPaneLength`依赖属性。
