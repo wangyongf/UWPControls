@@ -274,3 +274,4 @@ public bool IsPaneOpen { get; set; }
 
 #### 注意事项
 
+此属性的实际效果收到`DisplayMode`属性值的影响。  
