@@ -325,3 +325,13 @@ Transient UI，比如打开着的`SplitView`，当你点击Pane窗格外部的�
     }
 }
 ```
+
+### LightDismissOverlayModeProperty
+
+标识[LightDismissOverlayMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_LightDismissOverlayMode)依赖属性。
+
+```C#
+public static DependencyProperty LightDismissOverlayModeProperty { get; }
+```
+
+#### 属性值
