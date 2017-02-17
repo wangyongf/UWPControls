@@ -314,4 +314,14 @@ Transient UI，比如打开着的`SplitView`，当你点击Pane窗格外部的�
 
 ### 版本兼容性
 
-[LightDismissOverlayMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_LightDismissOverlayMode)属性在Windows10 version 1607之前的版本中不可用。如果你在Viusal Studio中设置的应用程序的最低平台版本低于本页后面要求的引进版本，你就必须设计并测试你的应用程序以免出现问题
+[LightDismissOverlayMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_LightDismissOverlayMode)属性在Windows10 version 1607之前的版本中不可用。如果你在Viusal Studio中设置的应用程序的最低平台版本低于本页后面要求的引进版本，你就必须设计并测试你的应用程序以免出现问题。更多信息请查看[版本兼容代码](https://msdn.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code)。为了避免当你的应用程序运行在先前Windows10的某些版本中时出现异常，不要在未进行运行时检测的情况下在XAML或代码中直接使用这一属性。下面这个示例展示了如何在使用该属性之前用[ApiInformation](https://docs.microsoft.com/en-us/uwp/api/windows.foundation.metadata.apiinformation)动态检测属性是否可用。
+
+```C#
+ private void MainPage_Loaded(object sender, RoutedEventArgs e)
+ {
+    if (ApiInformation.IsPropertyPresent("Windows.UI.Xaml.Controls.SplitView", "LightDismissOverlayMode"))
+    {
+        splitView1.LightDismissOverlayMode = LightDismissOverlayMode.On;
+    }
+}
+```
