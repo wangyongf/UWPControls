@@ -276,8 +276,42 @@ public bool IsPaneOpen { get; set; }
 
 此属性的实际效果受到`DisplayMode`属性值的影响。  
 
-| 水果        | 价格    |  数量  |
-| :--------:   | :-----:   | :----: |
-| 香蕉        | $1      |   5    |
-| 苹果        | $1      |   6    |
-| 草莓        | $1      |   7    |
+| DisplayMode        | Effect    |
+| :--------:   | :-----:   |
+| Inline内联        | `IsPaneOpen`始终为`true`      |
+| Overlay覆盖        | 当`IsPaneOpen`为false时，Pane窗格被隐藏      |  
+| Compact紧凑        | 当`IsPaneOpen`为false时，Pane窗格显示为紧凑的尺寸（参见[CompactPaneLength](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_CompactPaneLength)）      |
+
+### IsPaneOpenProperty
+
+标识`IsPaneOpen`依赖属性
+
+```C#
+public static DependencyProperty IsPaneOpenProperty { get; }
+```
+
+#### 属性值
+
+[DependencyProperty](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.dependencyproperty)  
+标识`IsPaneOpen`依赖属性
+
+### LightDismissOverlayMode
+
+获取或设置一个值，指定light-dismiss UI之外的区域是否变暗
+
+```C#
+public LightDismissOverlayMode LightDismissOverlayMode { get; set; }
+```
+
+#### 属性值
+
+[LightDismissOverlayMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.lightdismissoverlaymode)  
+一系列枚举值，指定light-dismiss UI之外的区域是否变暗。默认值是`Auto`。
+
+#### 注意事项
+
+Transient UI，比如打开着的`SplitView`，当你点击Pane窗格外部的时候，Pane窗格会关闭。这就称之为light-dismiss。`Overlay`指的是light-dismiss UI之外的区域。默认情况下，Xbox中的`Overlay`区域会变暗，而在其他设备族中则不会。你可以设置[LightDismissOverlayMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_LightDismissOverlayMode)为on开启状态，这样你的应用会将所有设备族中的`Overlay`区域变暗；相反，你也可以将其设置为off关闭状态。   
+
+### 版本兼容性
+
+[LightDismissOverlayMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_LightDismissOverlayMode)属性在Windows10 version 1607之前的版本中不可用。如果你在Viusal Studio中设置的应用的最低平台版本低于
