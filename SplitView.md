@@ -314,4 +314,4 @@ Transient UI，比如打开着的`SplitView`，当你点击Pane窗格外部的�
 
 ### 版本兼容性
 
-[LightDismissOverlayMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_LightDismissOverlayMode)属性在Windows10 version 1607之前的版本中不可用。如果你在Viusal Studio中设置的应用的最低平台版本低于本页后面
+[LightDismissOverlayMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.splitview#Windows_UI_Xaml_Controls_SplitView_LightDismissOverlayMode)属性在Windows10 version 1607之前的版本中不可用。如果你在Viusal Studio中设置的应用程序的最低平台版本低于本页后面要求的引进版本，你就必须设计并测试你的应用程序以免出现问题
