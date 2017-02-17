@@ -27,5 +27,5 @@ public class SplitView
 　　[UIElement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement)
 　　　　[FrameworkElement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.frameworkelement)
 　　　　　　[Control](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.control)
-
+　　　　　　　　SplitView
 
