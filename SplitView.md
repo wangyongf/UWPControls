@@ -29,3 +29,7 @@ public class SplitView
 　　　　　　[Control](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.control)
 　　　　　　　　SplitView
 
+### 继承的成员
+
+
+
